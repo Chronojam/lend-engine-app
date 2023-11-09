@@ -1,9 +1,10 @@
 <?php
 // Shouldn't need to do this but Symfony is not picking them up automatically
-
 $container->setParameter('postmark_api_key', getenv('SYMFONY__POSTMARK_API_KEY'));
 $container->setParameter('aws_key', getenv('SYMFONY__AWS_KEY'));
 $container->setParameter('aws_secret', getenv('SYMFONY__AWS_SECRET'));
+
+$container->setParameter('cloudamqp_url', getenv('CLOUDAMQP_URL'));
 
 // Stripe card payments for Connect (client's account via oAuth)
 $container->setParameter('stripe_client_id', getenv('SYMFONY__STRIPE_CLIENT'));

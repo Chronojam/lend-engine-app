@@ -168,7 +168,7 @@ hype_mailchimp:
 old_sound_rabbit_mq:
     connections:
         default:
-            url: "%CLOUDAMQP_URL%"
+            url: "%cloudamqp_url%"
             lazy: true
     producers:
         mail_queue:

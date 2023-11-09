@@ -7,7 +7,7 @@ Feature suggestions and pull requests are welcome (with the caveat that we need 
 
 **Requirements**
 
-- PHP 7.2.x
+- PHP 7.4.x
 - MySql 5.7.x
 - An AWS S3 account for file uploads
 - A Postmark account for outgoing emails
@@ -33,7 +33,7 @@ a shared table: `_core.item_type`. Run
 to insert the latest set. These are taken from a Google product taxonomy.
 
 **Email**
-
+ 
 Emails are sent using RabbitMQ. You'll need to configure the settings, and then run a worker (or two) 
 using ``bin/console rabbitmq:consumer mail_queue``
 
